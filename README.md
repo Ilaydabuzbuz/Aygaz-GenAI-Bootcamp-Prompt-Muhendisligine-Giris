@@ -1,2 +1,1 @@
-# Aygaz GenAI Bootcamp Prompt Muhendisligine Giris
- 
+# Aygaz GenAI Bootcamp Prompt Mühendisligine Giriş Projesi
