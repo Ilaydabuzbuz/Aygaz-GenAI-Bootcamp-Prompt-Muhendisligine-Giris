@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffe0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Longer header height */
+}
+
+.header-icon-container {
+    width: 60px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure the image stays within the circle */
+    margin-right: 20px; /* Add margin to separate from text */
+}
+
+.header-icon {
+    width: 100%; /* Ensure the image takes up the container's width */
+    height: 100%; /* Ensure the image takes up the container's height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px; /* Increase font size */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffb6c1;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    padding: 5px 10px;
+}
+
+.genre-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.genre-button:hover {
+    background-color: #ff69b4;
+    transform: translateY(-2px);
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.movie-item {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-title {
+    color: #ff1493;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie-container img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #ff1493;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

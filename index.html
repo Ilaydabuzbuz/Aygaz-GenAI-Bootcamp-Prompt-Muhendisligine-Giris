@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSuggest: Your Personal Movie Guru</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffe0f0; /* Light pink */
+        }
+
+        header {
+            background-color: #ff1493; /* Hot pink */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Add this line */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 80px; /* Longer header height */
+        }
+
+        .header-links {
+            display: flex; /* Add this line */
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+
+        .header-icon-container {
+            width: 60px; /* Set a fixed width */
+            height: 60px; /* Set a fixed height */
+            border-radius: 50%; /* Make it circular */
+            overflow: hidden; /* Ensure the image stays within the circle */
+            margin-right: 20px; /* Add margin to separate from text */
+        }
+
+        .header-icon {
+            width: 100%; /* Ensure the image takes up the container's width */
+            height: 100%; /* Ensure the image takes up the container's height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px; /* Increase font size */
+            flex: 1; /* Let the title take remaining space */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-icon-container">
+            <img src="movie-icon.png" alt="Movie Icon" class="header-icon">
+        </div>
+        <h1>CineSuggest: Your Personal Movie Guru</h1>
+        <div class="header-links"> <!-- Add this div -->
+            <a href="#">About</a> <!-- Add About link -->
+            <a href="#">Contact</a> <!-- Add Contact link -->
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><button class="genre-button" data-genre="horror">Horror</button></li>
+            <li><button class="genre-button" data-genre="comedy">Comedy</button></li>
+            <li><button class="genre-button" data-genre="action">Action</button></li>
+            <li><button class="genre-button" data-genre="drama">Drama</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="movie-display" class="movie-container"></section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CineSuggest. All rights reserved.</p>
+    </footer>
+</body>
+</html>
